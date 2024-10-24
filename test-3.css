@@ -1,0 +1,89 @@
+.first-animation {
+    background-color: blue;
+     border: 2px solid black;
+     width: 200px;
+     height: 200px;
+    }
+    .first-animation:hover {
+     animation: first-animation 2s;
+     transform: rotate(2.1);
+    }
+
+    @keyframes first-animation {
+        0%{
+            background-color: blue;
+        }
+        
+        50% {
+        background: darkorchid;
+        width: 250px;
+        rotate: 180deg;
+        height: 250px;
+        }
+       
+        100%{
+        background-color: pink;
+        } 
+       }
+
+    .second-animation{
+        border: 2px solid red;
+        width: 600px;
+        height: 150px;
+        
+    }
+    
+    .loding{
+        background-color: red;
+        border-radius:50%;
+        width: 150px;
+        height: 100%;
+        text-align: center;
+        animation-name: second-animation; 
+        animation-duration: 2s;
+        animation-iteration-count: infinite;
+    }
+    
+    @keyframes second-animation{
+        0%{
+    
+        }
+        50%{
+            margin-left: 75%;
+        }
+
+    }
+
+    .third-animation {
+        border: 16px solid #f3f3f3; 
+        border-radius: 50%;
+        width: 120px;
+        height: 120px;
+        border-top: 16px solid blue;
+        animation-name: third-animation;
+        animation-duration: 2s;
+        animation-iteration-count:infinite;
+        animation-timing-function: linear;
+        margin: 10px;
+    }
+    
+     @keyframes third-animation {
+        0%{ 
+            transform: rotate(0deg); 
+        }
+        50%{ 
+            transform: rotate(180deg); 
+        } 
+        100%{
+            transform: rotate(360deg); 
+        } 
+        100%{ 
+            transform: rotate(360deg); 
+        } 
+        50%{ 
+            transform: rotate(180deg); 
+        }
+        0%{
+             transform: rotate(0deg); 
+        } 
+    }
